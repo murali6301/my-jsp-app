@@ -15,4 +15,4 @@ CMD ["catalina.sh", "run"]
 
 COPY C:\Users\User\eclipse-workspace\site/
 
-
+COPY site/usr/local/tomcat/webapps/ROOT
