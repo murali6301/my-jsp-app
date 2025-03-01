@@ -13,6 +13,6 @@ EXPOSE 8080
 # Start Tomcat server
 CMD ["catalina.sh", "run"]
 
-COPY C:\Users\User\eclipse-workspace\site/
+COPY C:\Users\User\eclipse-workspace\site/ /usr/local/tomcat/webapps/ROOT/
 
-COPY site/usr/local/tomcat/webapps/ROOT
+
