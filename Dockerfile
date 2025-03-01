@@ -14,5 +14,5 @@ EXPOSE 8080
 CMD ["catalina.sh", "run"]
 
 COPY C:\Users\User\eclipse-workspace\site/
-COPY src/main/webapp/ /usr/local/tomcat/webapps/ROOT/
+
 
