@@ -32,7 +32,7 @@
 
         try {
             Class.forName("com.mysql.cj.jdbc.Driver");
-            conn = DriverManager.getConnection("jdbc:mysql://localhost:3306/user", "root", "Murali@9405");
+            conn = DriverManager.getConnection("jdbc:mysql://root:mKHuZIscurswmblwMWeLePtZsxZiAPEN@mysql.railway.internal:3306/railway", "root", "mKHuZIscurswmblwMWeLePtZsxZiAPEN");
             String sql = "SELECT username, fullname, password, email, gender, phone, address, status FROM clients WHERE username = ?";
             pstmt = conn.prepareStatement(sql);
             pstmt.setString(1, username);
