@@ -162,9 +162,9 @@
                 String adminUsername = request.getParameter("adminUsername");
                 String adminPassword = request.getParameter("adminPassword");
 
-                String url = "jdbc:mysql://localhost:3306/user";
+                String url = "jdbc:mysql://root:mKHuZIscurswmblwMWeLePtZsxZiAPEN@mysql.railway.internal:3306/railway";
                 String dbUser = "root";
-                String dbPassword = "Murali@9405";
+                String dbPassword = "mKHuZIscurswmblwMWeLePtZsxZiAPEN";
                 Connection conn = null;
 
                 try {
