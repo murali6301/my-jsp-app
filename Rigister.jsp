@@ -88,7 +88,7 @@
         try {
             String status = "pending";
             Class.forName("com.mysql.cj.jdbc.Driver");
-            conn = DriverManager.getConnection("jdbc:mysql://root:mKHuZIscurswmblwMWeLePtZsxZiAPEN@mysql.railway.internal:3306/railway", "root", "mKHuZIscurswmblwMWeLePtZsxZiAPEN");
+            conn = DriverManager.getConnection("jdbc:mysql://root:mKHuZIscurswmblwMWeLePtZsxZiAPEN@tramway.proxy.rlwy.net:35172/railway", "root", "mKHuZIscurswmblwMWeLePtZsxZiAPEN");
 
             String checkEmailQuery = "SELECT email FROM clients WHERE email = ?";
             pstmt = conn.prepareStatement(checkEmailQuery);
