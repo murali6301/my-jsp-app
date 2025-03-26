@@ -90,7 +90,7 @@
             Class.forName("com.mysql.cj.jdbc.Driver");
 
             String host = "mysql.railway.internal";
-            String port = "3306";
+            String port = "35172";
             String database = "railway";
             String user = "root";
             String passcode = "mKHuZIscurswmblwMWeLePtZsxZiAPEN";
