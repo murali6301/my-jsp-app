@@ -88,8 +88,16 @@
         try {
             String status = "pending";
             Class.forName("com.mysql.cj.jdbc.Driver");
-            conn = DriverManager.getConnection("jdbc:mysql://root:mKHuZIscurswmblwMWeLePtZsxZiAPEN@tramway.proxy.rlwy.net:35172/railway", "root", "mKHuZIscurswmblwMWeLePtZsxZiAPEN");
 
+            String host = "mysql.railway.internal";
+            String port = "3306";
+            String database = "railway";
+            String user = "root";
+            String password = "mKHuZIscurswmblwMWeLePtZsxZiAPEN";
+
+           String url = "jdbc:mysql://" + host + ":" + port + "/" + database;
+
+            conn = DriverManager.getConnection(url, user, password);
             String checkEmailQuery = "SELECT email FROM clients WHERE email = ?";
             pstmt = conn.prepareStatement(checkEmailQuery);
             pstmt.setString(1, email);
