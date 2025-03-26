@@ -93,11 +93,11 @@
             String port = "3306";
             String database = "railway";
             String user = "root";
-            String password = "mKHuZIscurswmblwMWeLePtZsxZiAPEN";
+            String passcode = "mKHuZIscurswmblwMWeLePtZsxZiAPEN";
 
            String url = "jdbc:mysql://" + host + ":" + port + "/" + database;
 
-            conn = DriverManager.getConnection(url, user, password);
+            conn = DriverManager.getConnection(url, user, passcode);
             String checkEmailQuery = "SELECT email FROM clients WHERE email = ?";
             pstmt = conn.prepareStatement(checkEmailQuery);
             pstmt.setString(1, email);
