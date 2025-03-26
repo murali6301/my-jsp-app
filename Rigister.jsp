@@ -95,7 +95,7 @@
             String user = "root";
             String passcode = "mKHuZIscurswmblwMWeLePtZsxZiAPEN";
 
-           String url = "jdbc:mysql://" + host + ":" + port + "/" + database;
+           String url = "jdbc:mysql://" + host + ":" + port + "/" + database +?autoReconnect=true&useSSL=false";
 
             conn = DriverManager.getConnection(url, user, passcode);
             String checkEmailQuery = "SELECT email FROM clients WHERE email = ?";
